@@ -528,7 +528,7 @@ Admin Commands 👑:
         help_text += f"""
 
 Supported Files:
-Photos 📸, Videos 🎬, Documents 📄, Audio 🎵, Voice 🎤 (up to {format_size(MAX_FILE_SIZE)})
+Photos 📸, Videos 🎬, Documents 📄, Audio 🎵, Voice � (up to {format_size(MAX_FILE_SIZE)})
 
 Branding: All files include {custom_caption}
 
@@ -550,7 +550,7 @@ Contact Admin: {ADMIN_CONTACT} 👨‍💻"""
     async def add_user_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Add user command"""
         if not is_admin(update.effective_user.id):
-            await update.message.reply_text("Unauthorized: Admin access required �")
+            await update.message.reply_text("Unauthorized: Admin access required 🚫")
             return
 
         if not context.args:
